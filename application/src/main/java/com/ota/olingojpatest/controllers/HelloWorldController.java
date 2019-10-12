@@ -33,7 +33,6 @@ public class HelloWorldController
         Employee emp = em.find(Employee.class, "001");
         String empstr = emp.toString();
         
-        
         return ResponseEntity.ok(new HelloWorldResponse(empstr));
     }
 }
